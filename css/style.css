@@ -12,6 +12,7 @@ body {
 }
 
 
+
 .btn:hover {
   background-color: #34495E;
 }
@@ -290,25 +291,25 @@ a:hover{
  }
 }
 
-.modal-body {
+.funfact {
     padding: 2px 16px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2em;
 }
 @media screen and (max-width: 768px) {
-  .modal-body{grid-template-columns: 1fr;}
+  .funfact{grid-template-columns: 1fr;}
 }
 
-.close {
+.sit {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.sit:hover,
+.sit:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

@@ -37,6 +37,7 @@ function showSlides(n) {
 }
 
 
+
 var btn = document.querySelectorAll("button.modal-button");
 var modals = document.querySelectorAll('.modal');
 var spans = document.getElementsByClassName("close");
