@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <title>World</title>
+    <nav class="topnav" id="main-nav">
+      <a href="#" class="nav-links"><button class="btn"><i class="fa fa-bars"></i> Menu</button></a>
+      <a href="#" class="nav-links"><button class="btn"><i class="fa fa-home"></i>Home</button></a>
+      <a href="#" class="nav-links"><button class="btn"><i class="fa fa-close"></i> Close</button></a>
+      <a href="javascript:void(0);" class="nav-link trigram" onclick="navToggle()">&#9776;</a>
+    </nav>
+
+    <div class="container">
+      <div class="mySlides">
+      <div class="numbertext"> 1 </div>
+      <img src="img/sinai.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"> 2 </div>
+        <img src="img/everest.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"> 3 </div>
+        <img src="img/mons.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"> 4 </div>
+        <img src="img/fiji.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"> 5 </div>
+        <img src="img/makalu.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"> 6 </div>
+        <img src="img/manaslu.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="captionOne"></p>
+      </div>
+
+      <div class="list">
+        <div class="column">
+        <img class="demo cursor" src="img/sinai.jpg" style="width:100%" onclick="currentSlide(1)" alt="Sinai">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/everest.jpg" style="width:100%" onclick="currentSlide(2)" alt="Everest">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/mons.jpg" style="width:100%" onclick="currentSlide(3)" alt="mons">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/fiji.jpg" style="width:100%" onclick="currentSlide(4)" alt="Fiji">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/makalu.jpg" style="width:100%" onclick="currentSlide(5)" alt="Manaslu">
+        </div>
+        <div class="column">
+        <img class="demo cursor" src="img/manaslu.jpg" style="width:100%" onclick="currentSlide(6)" alt="Makalu">
+        </div>
+      </div>
+    </div>
+
+
+
+    <article class="grid-container">
+
+      <div class="card one">
+        <div class="put"></div><hr>
+      <div class="card-content">
+        <h3>Mars</h3>
+        <p> Deemed most habitable planet after earth </p>
+        <div class="btn-cont">
+        <button class="modal-button" href="#myModal1">Fun Fact</button>
+        </div>
+        <div id="myModal1" class="modal">
+        <div class="modal-content">
+        <span class="close">&times</span>
+        <div class="modal-body">
+        <img src="img/mars.jpg" alt="mars" style="width:100%;max-width:500px;">
+        <p>Mars used to be warm and watery planet, now its cold and dry!</p>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="card two">
+        <div class="put"></div><hr>
+        <div class="card-content">
+          <h3>Venus</h3>
+          <p> Most turbulent planet in the solar system </p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal2">Fun Fact</button>
+        </div>
+        <div id="myModal2" class="modal">
+          <div class="modal-content">
+          <span class="close">&times</span>
+          <div class="modal-body">
+            <img src="img/venus.jpg" alt="venus" style="width:100%;max-width:500px;">
+            <p> Venus doesn’t have any moons! </p>
+            </div>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="card three">
+        <div class="put"></div><hr>
+        <div class="card-content">
+        <h3>Mercury</h3>
+        <p>Planet closest to the sun</p>
+        <div class="btn-cont">
+        <button class="modal-button" href="#myModal3">Fun Fact</button>
+        </div>
+        <div id="myModal3" class="modal">
+          <div class="modal-content">
+          <span class="close">&times</span>
+          <div class="modal-body">
+          <img src="img/mercury.jpg" alt="mercury" style="width:100%;max-width:500px;">
+          <p> Mercury is hot, but not too hot for ice </p>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="card four">
+        <div class="put"></div><hr>
+        <div class="card-content">
+        <h3>Jupiter</h3>
+        <p>Largest Planet in the solar system</p>
+        <div class="btn-cont">
+        <button class="modal-button" href="#myModal4">Fun Fact</button>
+        </div>
+        <div id="myModal4" class="modal">
+        <div class="modal-content">
+        <span class="close">&times</span>
+        <div class="modal-body">
+          <img src="img/jupiter.jpg" alt="jupiter" style="width:100%;max-width:500px;">
+      <p> Jupiter is a great comet catcher! </p>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="card five">
+    <div class="put"></div><hr>
+    <div class="card-content">
+      <h3>Saturn</h3>
+      <p> Planet with visible rings around them</p>
+      <div class="btn-cont">
+      <button class="modal-button" href="#myModal5">Fun Fact</button>
+        </div>
+      <div id="myModal5" class="modal">
+        <div class="modal-content">
+          <span class="close">&times</span>
+        <div class="modal-body">
+        <img src="img/saturn.jpg" alt="saturn" style="width:100%;max-width:500px;">
+        <p> No one knows how old Saturn’s rings are! </p>
+        </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="card six">
+        <div class="put"></div><hr>
+        <div class="card-content">
+          <h3>Uranus</h3>
+          <p>Gas Giant and rotating horizontally on its axis </p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal6">Fun Fact</button>
+        </div>
+        <div id="myModal6" class="modal">
+        <div class="modal-content">
+          <span class="close">&times</span>
+        <div class="modal-body">
+          <img src="img/uranus.jpg" alt="uranus" style="width:100%;max-width:500px;">
+          <p> Uranus is more stormy than we thought! </p>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="card seven">
+        <div class="put"></div><hr>
+        <div class="card-content">
+          <h3>Neptune</h3>
+          <p>Planet furthest from solar system and also the coldest </p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal7">Fun Fact</button>
+        </div>
+        <div id="myModal7" class="modal">
+        <div class="modal-content">
+          <span class="close">&times</span>
+          <div class="modal-body">
+          <img src="img/neptune.jpg" alt="neptune" style="width:100%;max-width:500px;">
+          <p> Neptune has supersonic winds! </p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="card eight">
+        <div class="put"></div><hr>
+        <div class="card-content">
+          <h3>Sun</h3>
+          <p>The star in our solar system that all planets revolve around</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal8">Fun Fact</button>
+        </div>
+        <div id="myModal8" class="modal">
+        <div class="modal-content">
+        <span class="close">&times</span>
+        <div class="modal-body">
+        <img src="img/sun.jpg" alt="Sun" style="width:100%;max-width:500px;">
+      <p> The Sun accounts for 99.86% of the mass in the solar system! </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="card nine">
+        <div class="put"></div><hr>
+        <div class="card-content">
+          <h3>Earth</h3>
+          <p>Our Home Planet</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal9">Fun Fact</button>
+        </div>
+          <div id="myModal9" class="modal">
+        <div class="modal-content">
+          <span class="close">&times</span>
+            <div class="modal-body">
+            <img src="img/earth.jpg" alt="earth" style="width:100%;max-width:500px;">
+            <p> 70% of the Earth's Surface is Covered in Water! </p>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card ten">
+        <div class="put"></div><hr>
+        <div class="card-content">
+          <h3>Moon</h3>
+          <p>Earth's only natural satelite </p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal10">Fun Fact</button>
+        </div>
+          <div id="myModal10" class="modal">
+            <div class="modal-content">
+          <span class="close">&times</span>
+          <div class="modal-body">
+          <img src="img/moon.jpg" alt="moon" style="width:100%;max-width:500px;">
+          <p>The moon is moving further away from Earth by 2 inches every year</p>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card eleven">
+        <div class="put"></div><hr>
+        <div class="card-content">
+          <h3>Asteroid Belt</h3>
+          <p>String of asteroids that separate Mars and Jupiter</p>
+          <div class="btn-cont">
+          <button class="modal-button" href="#myModal11">Fun Fact</button>
+        </div>
+      <div id="myModal11" class="modal">
+      <div class="modal-content">
+        <span class="close">&times</span>
+        <div class="modal-body">
+        <img src="img/asteroid.jpg" alt="asteroid belt" style="width:100%;max-width:500px;">
+        <p> The asteroid belt divides the solar sytem in half</p>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="card twelve">
+        <div class="put"></div><hr>
+        <div class="card-content">
+        <h3>Europa</h3>
+      <p>One of the 4 Galilean moons of Jupiter</p>
+      <div class="btn-cont">
+        <button class="modal-button" href="#myModal12">Fun Fact</button>
+      </div>
+      <div id="myModal12" class="modal">
+      <div class="modal-content">
+        <span class="close">&times</span>
+      <div class="modal-body">
+      <img src="img/europa.jpg" alt="europa moon" style="width:100%;max-width:500px;">
+      <p>There are signs of aquatic life present in Europa!</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+
+    </article>
+    <footer>
+      <p>Shamshad Abdullah 2021</p>
+    </footer>
+    <script src="js/media.js"></script>
+  </body>
+</html>

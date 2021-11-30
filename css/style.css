@@ -1,0 +1,323 @@
+
+body {
+  background-color: #34495E;
+}
+.btn {
+  background-color: #7B7D7D;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  background-color: #34495E;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "MV Boli", sans-serif;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-family: "MV Boli", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7B7D7D;
+  color: #DDD;
+  padding: 1em;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  nav {flex-direction: row;}
+}
+nav a {
+  position: relative;
+  color: #DDD;
+  text-decoration: none;
+  font-family: "MV Boli", sans-serif;
+}
+
+a:hover{
+  color: #58b0e4 ;
+  transition: color 250ms ease-in-out;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+.trigram {
+  font-size: 1.75em;
+  display: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .topnav a {display: none;}
+  .topnav a.trigram {display: inherit; align-self: flex-end;}
+}
+@media screen and (max-width: 767px) {
+  .topnav.responsive {align-items: center;}
+  .topnav.responsive a {display:inherit;}
+  .topnav.responsive a.trigram {visibility: hidden; position: absolute; right: 3%; top: 2%;}
+  .topnav.responsive a.trigram::after {content:'\000D7'; visibility:visible; text-indent: -.5em;}
+}
+
+.container {
+  position: relative;
+  background-color: #34495E ;
+
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.btn-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+
+}
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.grid-container {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: 1fr;
+  padding: 0.5em;
+}
+@media screen and (min-width: 550px) {
+  .grid-container {grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 768px) {
+  .grid-container {grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (min-width: 990px) {
+  .grid-container {grid-template-columns: repeat(4, 1fr);}
+}
+
+.card {
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #E8C30D;
+}
+
+.card-content {
+  padding: 1em;
+  background-color: #E8C30D;
+}
+
+.put {
+  padding-bottom: 60%;
+  background-position: center center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.one .put {
+  background-image: url('../img/mars.jpg');
+}
+.two .put {
+  background-image: url('../img/venus.jpg');
+}
+
+.three .put {
+  background-image: url('../img/mercury.jpg');
+}
+.four .put {
+  background-image: url('../img/jupiter.jpg');
+}
+.five .put {
+  background-image: url('../img/saturn.jpg');
+}
+.six .put {
+  background-image: url('../img/uranus.jpg');
+}
+.seven .put {
+  background-image: url('../img/neptune.jpg');
+}
+.eight .put {
+  background-image: url('../img/sun.jpg');
+}
+.nine .put {
+  background-image: url('../img/earth.jpg');
+}
+.ten .put {
+  background-image: url('../img/moon.jpg');
+}
+.eleven .put {
+  background-image: url('../img/asteroid.jpg');
+}
+.twelve .put {
+  background-image: url('../img/europa.jpg');
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-button {
+ background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+ background-size: 800% 400%;
+ padding: 1em 2em;
+ display: inline-block;
+ border: none;
+ border-radius: 10px;
+ font-size: 17px;
+ font-weight: 700;
+ color: white;
+ transition: all .5s ease-in-out;
+ animation: gradient 10s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+.modal-button:hover {
+ animation: gradient 3s infinite;
+ transform: scale(1.05);
+}
+
+.modal-button:active {
+ animation: gradient 3s infinite;
+ transform: scale(0.8);
+}
+
+@keyframes gradient {
+ 0% {
+  background-position: 0% 50%;
+ }
+
+ 50% {
+  background-position: 100% 50%;
+ }
+
+ 100% {
+  background-position: 0% 50%;
+ }
+}
+
+.modal-body {
+    padding: 2px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+}
+@media screen and (max-width: 768px) {
+  .modal-body{grid-template-columns: 1fr;}
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #ddd;
+  padding: 1em;
+  text-align: center;
+  background-color: #7B7D7D;
+}
