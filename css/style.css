@@ -33,7 +33,7 @@ nav {
   justify-content: space-between;
   background-color: #7B7D7D;
   color: #DDD;
-  padding: 1em;
+  padding: .2em;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
@@ -316,9 +316,8 @@ a:hover{
 }
 
 footer {
-  background-color: #333;
   color: #ddd;
-  padding: 1em;
+  padding: .09em;
   text-align: center;
   background-color: #7B7D7D;
 }
